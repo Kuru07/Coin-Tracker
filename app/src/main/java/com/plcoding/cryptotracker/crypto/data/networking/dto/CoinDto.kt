@@ -1,8 +1,9 @@
-package com.plcoding.cryptotracker.crypto.domain
+package com.plcoding.cryptotracker.crypto.data.networking.dto
 
-import androidx.compose.foundation.lazy.layout.LazyLayoutIntervalContent
+import kotlinx.serialization.Serializable
 
-data class Coin(
+@Serializable
+data class CoinDto(
     val id: String,
     val rank: Int,
     val name: String,
@@ -10,5 +11,6 @@ data class Coin(
     val marketCapUsd: Double,
     val priceUsd: Double,
     val changePercent24Hr: Double
+) {
 
-)
+}
